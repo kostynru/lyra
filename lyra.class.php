@@ -2,7 +2,7 @@
 
 	/**
 	* @author Ildar Karymov
-	* @version 2.0 alpha
+	* @version 2.5 alpha
 	*/
 
 	class Lyra {
