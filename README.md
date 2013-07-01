@@ -1,7 +1,8 @@
 Lyra
 ====
 
-Programming language
+Lyra is alternative PHP, that written on (prepare yourself) PHP! We develop this programming language, because we love PHP, and we want to 
+correct many incorrect and uncomfortable things in PHP.
 
 Naming style
 =
