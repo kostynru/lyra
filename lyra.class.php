@@ -1,6 +1,6 @@
 <?php
 
-  /**
+	/**
 	* @author Ildar Karymov
 	* @version 2.0 alpha
 	*/
@@ -42,15 +42,14 @@
 			if (file_exists($_SERVER['DOCUMENT_ROOT'] . $filename_lyra)) {
 				require $filename_lyra;
 				array_push($this->t_classpaths, $path);
-				return true;
 			}
 			elseif (file_exists($_SERVER['DOCUMENT_ROOT'] . $filename_php)) {
 				require $filename_php;
 				array_push($this->t_classpaths, $path);
-				return true;
 			}
 			else {
-				return false;
+				// @TODO: Calling degugger
+				# Debugger atata
 			}
 		}
 
@@ -64,11 +63,7 @@
 					// @TODO: Implemention with a single regexp
 					$classpath = preg_replace("/(\s|\t)*import(\s)/", "", $this->m_code[$i]);
 					$classpath = preg_replace("/;(\s|\t)*", "", $classpath);
-					$import = $this->addImport($classpath);
-					if (!$import) {
-						// @TODO: Calling degugger
-						# Debugger atata
-					}
+					$this->addImport($classpath);
 
 					# To be continued...
 				}
