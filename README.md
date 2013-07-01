@@ -1,10 +1,10 @@
-lyra
+Lyra
 ====
 
 Programming language
 
-Naming style:
-==
+Naming style
+=
 $t_%varname% - tokens arrays
 
 $m_%varname% - member of class
