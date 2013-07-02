@@ -64,9 +64,13 @@
 					$classpath = preg_replace("/(\s|\t)*import(\s)/", "", $this->m_code[$i]);
 					$classpath = preg_replace("/;(\s|\t)*", "", $classpath);
 					$this->addImport($classpath);
+				}
 
+				// Parsing classes:
+				if (preg_match("/(\s|\t)*class(\s)+(\w)(\s|\t)*\{(\s|\t)*", $this->m_code[$i]) {
 					# To be continued...
 				}
+				
 			}
 		}
 
