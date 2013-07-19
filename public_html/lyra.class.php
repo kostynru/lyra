@@ -22,7 +22,7 @@
 			$this->t_classpaths = array("std");
 			$this->t_vars       = array();
 			$this->t_functions  = array(
-				"sleep" => function(seconds) {
+				"sleep" => function($seconds) {
 					if (is_int($seconds)) sleep($seconds);
 				}
 			);
